@@ -1,0 +1,19 @@
+{
+  "name": "bitbucket-to-gerrit",
+  "version": "1.0.0",
+  "description": "Bitbucket to Gerrit migrator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitbucket",
+    "gerrit"
+  ],
+  "author": "Cosium",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "0.17.1",
+    "commander": "2.13.0"
+  }
+}
