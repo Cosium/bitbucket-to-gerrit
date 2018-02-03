@@ -32,7 +32,7 @@ npx bitbucket-to-gerrit --help
  
 ## Examples
 
-#### Basic
+#### Migrate all repositories
 
 ```bash
 npx bitbucket-to-gerrit \
@@ -40,7 +40,7 @@ npx bitbucket-to-gerrit \
 -g "https://gerrit.doe.com" -U gerrituser -P gerritpassword
 ```
 
-#### Exclude some repositories
+#### Migrate all repositories except some of them
 
 Migrate all repositories except `first-repo-to-exclude` and `second-repo-to-exclude`:
 
@@ -51,7 +51,7 @@ npx bitbucket-to-gerrit \
 -e first-repo-to-exclude -e second-repo-to-exclude
 ```
 
-#### Include only specific repositories
+#### Migrate only specific repositories
 
 Migrate only repositories `first-repo-to-include` and `second-repo-to-include`:
 
