@@ -30,7 +30,7 @@ npx bitbucket-to-gerrit --help
     -h, --help                                      output usage information
  ```
  
-## Example
+## Examples
 
 #### Basic
 
