@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "release": "npm version minor && git push && git push --tags && npm publish"
+    "release": "npm version patch && git push && git push --tags && npm publish"
   },
   "keywords": [
     "bitbucket",
