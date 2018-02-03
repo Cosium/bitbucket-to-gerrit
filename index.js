@@ -132,10 +132,13 @@ axios.get(bitbucketReposUrl, {auth: bitbucketCredentials})
         repositories.forEach(repository => processChain = processChain
             .then(() =>
                 processRepository(repository)
-                    .catch((error) => repositoryFailures.push({
-                        name: repository.name,
-                        error: error
-                    }))
+                    .catch((error) => {
+                        console.error(error);
+                        repositoryFailures.push({
+                            name: repository.name,
+                            error: error
+                        });
+                    })
             ));
         return processChain;
     })
