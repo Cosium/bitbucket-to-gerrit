@@ -36,7 +36,7 @@ npx bitbucket-to-gerrit --help
 
 ```bash
 npx bitbucket-to-gerrit \
--b "https://bitbucket.doe.com" -u bitbucketuser -p johnpassword \
+-b "https://bitbucket.doe.com" -u bitbucketuser -p bitbucketpassword \
 -g "https://gerrit.doe.com" -U gerrituser -P gerritpassword
 ```
 
@@ -46,8 +46,8 @@ Migrate all repositories except `first-repo-to-exclude` and `second-repo-to-excl
 
 ```bash
 npx bitbucket-to-gerrit \
--b "https://bitbucket.doe.com" -u bitbucketuser -p johnpassword \
--g "https://gerrit.doe.com" -U gerrituser -P gerritpassword \
+-b "https://bitbucket.foo.com" -u bitbucketuser -p bitbucketpassword \
+-g "https://gerrit.foo.com" -U gerrituser -P gerritpassword \
 -e first-repo-to-exclude -e second-repo-to-exclude
 ```
 
@@ -57,7 +57,7 @@ Migrate only repositories `first-repo-to-include` and `second-repo-to-include`:
 
 ```bash
 npx bitbucket-to-gerrit \
--b "https://bitbucket.doe.com" -u bitbucketuser -p johnpassword \
--g "https://gerrit.doe.com" -U gerrituser -P gerritpassword \
+-b "https://bitbucket.foo.com" -u bitbucketuser -p bitbucketpassword \
+-g "https://gerrit.foo.com" -U gerrituser -P gerritpassword \
 -i first-repo-to-include -i second-repo-to-include
 ```
