@@ -53,6 +53,7 @@ console.info(`BitBucket user is '${program.bitbucketUsername}'`);
 console.info(`Excluding bitbucket repositories named '${program.bitbucketRepositoriesToExclude}'`);
 console.info(`Gerrit url is '${program.gerritUrl}'`);
 console.info(`Gerrit user is '${program.gerritUsername}'\n`);
+console.info(`Gerrit parent project is '${program.gerritParent}'\n`);
 
 const gerritProjectsUrl = `${program.gerritUrl}/a/projects`;
 const bitbucketReposUrl = `${program.bitbucketUrl}/rest/api/1.0/repos?limit=1000`;
