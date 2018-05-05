@@ -27,6 +27,7 @@ npx bitbucket-to-gerrit --help
     -g, --gerrit-url <url>                          Gerrit url
     -U, --gerrit-username <username>                Gerrit username
     -P, --gerrit-password <password>                Gerrit password
+    -X, --gerrit-parent <parent>                    Gerrit parent project
     -h, --help                                      output usage information
  ```
  

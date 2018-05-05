@@ -36,6 +36,7 @@ program
     .option('-g, --gerrit-url <url>', 'Gerrit url', removeLastSlash)
     .option('-U, --gerrit-username <username>', 'Gerrit username')
     .option('-P, --gerrit-password <password>', 'Gerrit password')
+    .option('-X, --gerrit-parent <parent>', 'Gerrit parent project')
     .parse(process.argv);
 
 assertMandatoryArgumentsPresence(program, [
@@ -108,9 +109,15 @@ const processRepository = (repository) => {
             error => {
                 if (error.response.status === 404) {
                     console.info(`Creating project '${name}'`);
+                    const projectInput = {};
+                    const parent = program.gerritParent;
+                    if (parent) {
+                        projectInput.parent = parent;
+                    }
+
                     return axios.put(
                         `${gerritProjectsUrl}/${name}`,
-                        {},
+                        projectInput,
                         {auth: gerritCredentials}
                     )
                         .then(response => response.data);
