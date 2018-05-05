@@ -1,6 +1,6 @@
 {
   "name": "bitbucket-to-gerrit",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Bitbucket to Gerrit migrator",
   "main": "index.js",
   "bin": "index.js",
