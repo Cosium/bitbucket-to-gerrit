@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/v/bitbucket-to-gerrit.svg)
+
 ## Bitbucket to Gerrit migration tool
 
 Migrate your BitBucket git repositories to Gerrit in a blink.
